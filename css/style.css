@@ -17,10 +17,6 @@
   --gap-spacing-nav: 68px;
 }
 
-.fa-solid {
-  color: var(--main-color);
-}
-
 body {
   display: flex;
   justify-content: center;
@@ -75,6 +71,10 @@ a {
   color: var(--main-bg-color);
 }
 
+.fa-solid {
+  color: var(--main-color);
+}
+
 
 
 /****** Header ***********/
@@ -82,7 +82,6 @@ a {
 .navigation {
   display: flex;
   justify-content: space-between;
-  align-content: end;
 }
 
 .navigation .logo img {
@@ -94,20 +93,21 @@ a {
   display: flex;
   gap: var(--gap-spacing-nav);
   margin: 0;
-  padding: 16px 0 0 0;
+  padding-left: 0;
   list-style: none;
 }
 
-.nav-items .link {
+.nav-items .nav-link {
+  display: block;
   font-size: 16px;
   border-color: transparent;
   border-style: solid;
-  padding: 10px 20px;
+  padding: 14px 0;
   border-width: 2px 0 0 0;
   transition: all 0.2s ease-in;
 }
 
-.nav-items .link:hover {
+.nav-items .nav-link:hover {
   color: var(--main-color);
   border-color: var(--main-color);
 }
@@ -139,6 +139,7 @@ a {
 .search-submit-icon {
   display: none;
 }
+
 .search-form {
   display: flex;
 }
@@ -263,12 +264,12 @@ a {
 }
 
 /****** Hebergements And Populaires ***********/
-.offers-and-popular {
+.offers-and-populars {
   display: flex;
   justify-content: space-between;
 }
 
-.offers-and-popular section {
+.offers-and-populars section {
   background-color: var(--main-bg-color);
   border-radius: 20px;
   padding: 30px;
@@ -474,7 +475,7 @@ a {
     align-items: start;
   }
 
-  .offers-and-popular {
+  .offers-and-populars {
     flex-direction: column;
   }
 
@@ -543,7 +544,7 @@ a {
     flex: 1 1 50%;
   }
 
-  .nav-items .link {
+  .nav-items .nav-link {
     display: inline-block;
     width: 100%;
     box-sizing: border-box;
@@ -556,10 +557,12 @@ a {
     padding: 0 20px;
   }
 
+/* Cache le texte en mobile */
   .search-submit-text {
     display: none;
   }
 
+/* Affiche l'icone en mobile */
   .search-submit-icon {
     display: block;
   }
@@ -584,21 +587,21 @@ a {
     flex: 1 1 calc(50% - var(--gap-spacing-s));
   }
 
-  .offers-and-popular {
+  .offers-and-populars {
     flex-direction: column-reverse;
   }
 
-  .offers-and-popular section {
+  .offers-and-populars section {
     border-radius: 0;
     padding: 30px 20px;
     background: var(--main-white);
   }
 
-  .offers-and-popular .offers {
+  .offers-and-populars .offers {
     gap: var(--gap-spacing-s);
   }
 
-  .offers-and-popular .populars {
+  .offers-and-populars .populars {
     background-color: var(--main-bg-color);
     margin-top: 0;
     gap: var(--gap-spacing-s);
