@@ -272,7 +272,7 @@ a {
 .offers-and-populars section {
   background-color: var(--main-bg-color);
   border-radius: 20px;
-  padding: 30px;
+  padding: var(--gap-spacing-m);
   box-sizing: border-box;
 }
 
@@ -532,7 +532,7 @@ a {
   }
 
   .navigation .logo img {
-    padding: 30px;
+    padding: var(--gap-spacing-m);
   }
 
   .nav-items {
