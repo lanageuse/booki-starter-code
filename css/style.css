@@ -44,13 +44,13 @@ a {
 .section-title {
   margin: 0;
   font-size: 1.375rem;
-  line-height: 25.83px;
+  line-height: 1.614rem;
 }
 
 .section-subtitle {
   margin: 0;
   font-size: 1rem;
-  line-height: 18.78px;
+  line-height: 1.174rem;
 }
 
 .card {
@@ -228,7 +228,7 @@ a {
   padding: 14px 19px;
   font-size: 1.063rem;
   font-weight: var(--body-highlight-font-weight);
-  line-height: 19.96px;
+  line-height: 1.248rem;
   border-radius: 25px;
   border-style: solid;
   border-color: var(--info-radius-color);
@@ -460,7 +460,6 @@ a {
   padding-left: 0;
   margin-bottom: 0;
   list-style: none;
-  /* line-height: 30px; */
 }
 
 .footer ul li {
