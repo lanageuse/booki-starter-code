@@ -10,16 +10,18 @@
   --info-radius-color: #d9d9d9;
   /* fonts */
   --body-font: "Raleway", sans-serif;
+  --font-base:16px;
   --body-highlight-font-weight: 700;
   /* spacing */
-  --gap-spacing-xs: 8px;
-  --gap-spacing-s: 15px;
-  --gap-spacing-m: 30px;
-  --gap-spacing-nav: 68px;
+  --gap-spacing-xs: 0.5rem;
+  --gap-spacing-s: 0.938rem;
+  --gap-spacing-m: 1.875rem;
+  --gap-spacing-nav: 4.25rem;
 }
 
 * {
   font-family: var(--body-font);
+  font-size:var(--font-base);
 }
 
 body {
@@ -91,6 +93,7 @@ a {
 
 .navigation .logo img {
   max-width: 61.09px;
+  height:auto;
   padding: 30px 50px 30px 0;
 }
 
